@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="header">
+		<h1>Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Here's how you play the game</h3>
+		</br>
+		<ul class ="list-group list-group-flush">
+			<li class="list-group-item">You will be given a random number at the start of the game.</li>
+			<li class="list-group-item">There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li class="list-group-item">You win the game by matching your total score to the random number.</li>
+			<li class="list-group-item">You lose the game if your total score goes above the random number.</li>
+			<li class="list-group-item">The value of each crystal is hidden from you until you click on it.</li>
+			<li class="list-group-item">Each time when the game starts, the game will change the values of each crystal.</li>
+		</ul>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id="answer"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "win"></span>
+			</br>
+			Losses:
+			<span id= "loss"></span>
+		</h2>
+	</div>
+	<div class="gems">
+    <img src="assets/images/gem1.png" class=crystal id="one" alt="Red Gem">
+	  <img src="assets/images/gem2.png" class=crystal id="two" alt="Blue Gem">
+    <img src="assets/images/gem3.png" class=crystal id="three" alt="Green Gem">
+    <img src="assets/images/gem4.png" class=crystal id="four" alt="Yellow Gem">
+  </div>
+	<div class="userTotal">
+		<h2>Your current total is:
+			<span id="currentTotal"></span>
+		</h2>
+	</div>
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
