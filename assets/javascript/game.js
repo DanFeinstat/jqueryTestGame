@@ -8,6 +8,8 @@ $(document).ready(function(){
   let currentTotal = 0;
   let wins = 0;
   let losses = 0;
+  let winSong = $("#winSong");
+  let lossSong = $("#lossSong");
 
   //initializing function, gets us random variables for the value of each crystal and the answer.
   //Makes sure the answer is obtainable with the crystal values
@@ -33,6 +35,7 @@ $(document).ready(function(){
     wins++;
     $("#win").text(wins);
     getValues();
+    winSong.trigger("play");
   }
   //loss contingency
   function defeat(){
@@ -40,6 +43,7 @@ $(document).ready(function(){
     losses++;
     $("#loss").text(losses);
     getValues();
+    lossSong.trigger("play");
   }
 
   //function to add points
